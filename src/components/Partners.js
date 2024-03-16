@@ -13,7 +13,7 @@ const Partners = ({ dark }) => {
                     src={`img/partners/${dark ? "light" : "dark"}/1.png`}
                     alt=""
                   />
-                  <a className="devman_tm_full_link" a="" href="#" />
+                  <a className="devman_tm_full_link"   href="#" />
                 </div>
               </li>
               <li>
@@ -25,7 +25,7 @@ const Partners = ({ dark }) => {
                     src={`img/partners/${dark ? "light" : "dark"}/2.png`}
                     alt=""
                   />
-                  <a className="devman_tm_full_link" a="" href="#" />
+                  <a className="devman_tm_full_link"   href="#" />
                 </div>
               </li>
               <li>
@@ -37,7 +37,7 @@ const Partners = ({ dark }) => {
                     src={`img/partners/${dark ? "light" : "dark"}/3.png`}
                     alt=""
                   />
-                  <a className="devman_tm_full_link" a="" href="#" />
+                  <a className="devman_tm_full_link"   href="#" />
                 </div>
               </li>
               <li>
@@ -49,7 +49,7 @@ const Partners = ({ dark }) => {
                     src={`img/partners/${dark ? "light" : "dark"}/4.png`}
                     alt=""
                   />
-                  <a className="devman_tm_full_link" a="" href="#" />
+                  <a className="devman_tm_full_link"   href="#" />
                 </div>
               </li>
               <li>
@@ -60,7 +60,7 @@ const Partners = ({ dark }) => {
                     src={`img/partners/${dark ? "light" : "dark"}/5.png`}
                     alt=""
                   />
-                  <a className="devman_tm_full_link" a="" href="#" />
+                  <a className="devman_tm_full_link"   href="#" />
                 </div>
               </li>
               <li>
@@ -72,7 +72,7 @@ const Partners = ({ dark }) => {
                     src={`img/partners/${dark ? "light" : "dark"}/6.png`}
                     alt=""
                   />
-                  <a className="devman_tm_full_link" a="" href="#" />
+                  <a className="devman_tm_full_link"   href="#" />
                 </div>
               </li>
               <li>
@@ -84,7 +84,7 @@ const Partners = ({ dark }) => {
                     src={`img/partners/${dark ? "light" : "dark"}/7.png`}
                     alt=""
                   />
-                  <a className="devman_tm_full_link" a="" href="#" />
+                  <a className="devman_tm_full_link"   href="#" />
                 </div>
               </li>
               <li>
@@ -96,7 +96,7 @@ const Partners = ({ dark }) => {
                     src={`img/partners/${dark ? "light" : "dark"}/8.png`}
                     alt=""
                   />
-                  <a className="devman_tm_full_link" a="" href="#" />
+                  <a className="devman_tm_full_link"   href="#" />
                 </div>
               </li>
             </ul>
