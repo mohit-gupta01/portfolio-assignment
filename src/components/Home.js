@@ -17,14 +17,14 @@ const Home = ({ userData }) => {
     <div className="devman_tm_section" id="home">
       <div className="devman_tm_hero">
         <div className="background">
-          <div className="image" style={{ backgroundColor: "#457b9d" }} />
+          <div className="image" style={{ backgroundColor: "#242338" }} />
         </div>
         <div className="container">
           <div className="content">
             <div className="left">
               <div className="inner">
                 <h3 className="hello">Hello {`I'm`}</h3>
-                <h3 className="name">
+                <h3 className="name" style={{color: "#f77f00"}}>
                   {userData.name}
                 </h3>
                 <h3 className="job">
@@ -80,7 +80,8 @@ const Home = ({ userData }) => {
                   </div>
                 </div>
                 <span className="circle anim_circle">
-                  <img src="img/hero/circle.png" alt="" />
+                    <img src={userData?.avatar.url} alt="" />
+                    {/* <div className="main" data-img-url={userData?.avatar.url} /> */}
                 </span>
               </div>
             </div>

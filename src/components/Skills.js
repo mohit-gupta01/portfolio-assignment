@@ -5,7 +5,6 @@ const Skills = ({ skills }) => {
   useEffect(() => {
     window.addEventListener("scroll", activeSkillProgress);
   }, []);
-  let mid = Math.ceil(skills.length / 2);
 
   return (
     <div className="devman_tm_section">
@@ -22,7 +21,7 @@ const Skills = ({ skills }) => {
           <div className="skills_wrapper">
             <div className="left">
               <div className="dodo_progress">
-                {skills.slice(0, mid).map((skill, index) => (
+                {skills?.map((skill, index) => (
                   <div
                     className="skillsInner___ progress_inner"
                     data-value={skill.percentage}
@@ -45,24 +44,14 @@ const Skills = ({ skills }) => {
             </div>
             <div className="right">
               <div className="dodo_progress">
-                {skills.slice(mid).map((skill, index) => (
-                  <div
-                    className="skillsInner___ progress_inner"
-                    data-value={skill.percentage}
-                    data-color="#142eb5"
-                    key={index}
-                  >
-                    <span>
-                      <span className="label">{skill.name}</span>
-                      <span className="number">{skill.percentage}%</span>
-                    </span>
-                    <div className="background">
-                      <div className="bar">
-                        <div className="bar_in" />
-                      </div>
+                {/* SKILLS IMAGES */}
+                <div className="skills-images">
+                  {skills?.map((skill, index) => (
+                    <div key={index} className="skill-image">
+                      <img src={skill.image?.url} alt="" />
                     </div>
-                  </div>
-                ))}
+                  ))}
+                </div>
               </div>
             </div>
           </div>
