@@ -31,7 +31,18 @@ const Testimonials = ({ testimonials }) => {
               {testimonials.map((testimonial, i) =>
                 <SwiperSlide key={i}>
                   <div className="list_inner">
+                    <div className="testimonial-image">
+                      <img src={testimonial.image?.url} alt="" />
+                    </div>
+                    <div className="title">
+                      <h3>{testimonial.name}</h3>
+                      <span>{testimonial.position}</span>
+                    </div>
                     <img className="svg" src="img/svg/quote.svg" alt="" />
+                    <div>
+                      <p className="text">{testimonial.review}</p>
+                    </div>
+                    {/* 
                     <p className="text">
                       {testimonial.review}
                     </p>
@@ -46,7 +57,7 @@ const Testimonials = ({ testimonials }) => {
                         <h3>{testimonial.name}</h3>
                         <span>{testimonial.position}</span>
                       </div>
-                    </div>
+                    </div> */}
                   </div>
                 </SwiperSlide>
               )}

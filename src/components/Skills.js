@@ -43,7 +43,7 @@ const Skills = ({ skills }) => {
               </div>
             </div>
             <div className="right">
-              <div className="dodo_progress">
+              <div className="dodo_progress wow fadeInRight">
                 {/* SKILLS IMAGES */}
                 <div className="skills-images">
                   {skills?.map((skill, index) => (

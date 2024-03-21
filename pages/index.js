@@ -38,9 +38,9 @@ const Index = ({ userData }) => {
       <Service services={userData?.services} />
       <Process />
       <Testimonials testimonials={userData?.testimonials} />
-      <Partners />
+      {/* <Partners /> */}
       <Contact user={userData?.about} userEmail={userData?.email}/>
-      <Blog />
+      {/* <Blog /> */}
       <Copyright socialData={userData?.social_handles} />
       <Mouse />
       <ScrollTop />

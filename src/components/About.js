@@ -50,7 +50,7 @@ const About = ({ userData }) => {
             <div className="right">
               <div className="title">
                 <span>
-                  {`I'm`} a {about.title}
+                  {`I'm`} a <br />{about.title}
                 </span>
                 <h3>{about.subTitle}</h3>
               </div>
