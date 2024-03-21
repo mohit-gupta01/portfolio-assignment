@@ -1,48 +1,6 @@
 import { Fragment, useState } from "react";
 import ServicePopup from "./popup/ServicePopup";
 
-const serviceData = [
-  {
-    name: "Desktop Application",
-    icon: "img/svg/cpu.svg",
-    img: "img/service/1.jpg",
-    description: [
-      "Devman is a leading web design agency with an award-winning design team that creates innovative, effective websites that capture your brand, improve your conversion rates, and maximize your revenue to help grow your business and achieve your goals.",
-      "In today’s digital world, your website is the first interaction consumers have with your business. That's why almost 95 percent of a user’s first impression relates to web design. It’s also why web design services can have an immense impact on your company’s bottom line.",
-      "That’s why more companies are not only reevaluating their website’s design but also partnering with Devman, the web design agency that’s driven more than $2.4 billion in revenue for its clients. With over 50 web design awards under our belt, we're confident we can design a custom website that drives sales for your unique business.",
-    ],
-  },
-  {
-    name: "Mobile Application",
-    icon: "img/svg/phone.svg",
-    img: "img/service/2.jpg",
-    description: [
-      "Devman is a leading web design agency with an award-winning design team that creates innovative, effective websites that capture your brand, improve your conversion rates, and maximize your revenue to help grow your business and achieve your goals.",
-      "In today’s digital world, your website is the first interaction consumers have with your business. That's why almost 95 percent of a user’s first impression relates to web design. It’s also why web design services can have an immense impact on your company’s bottom line.",
-      "That’s why more companies are not only reevaluating their website’s design but also partnering with Devman, the web design agency that’s driven more than $2.4 billion in revenue for its clients. With over 50 web design awards under our belt, we're confident we can design a custom website that drives sales for your unique business.",
-    ],
-  },
-  {
-    name: "Website Development",
-    icon: "img/svg/web.svg",
-    img: "img/service/3.jpg",
-    description: [
-      "Devman is a leading web design agency with an award-winning design team that creates innovative, effective websites that capture your brand, improve your conversion rates, and maximize your revenue to help grow your business and achieve your goals.",
-      "In today’s digital world, your website is the first interaction consumers have with your business. That's why almost 95 percent of a user’s first impression relates to web design. It’s also why web design services can have an immense impact on your company’s bottom line.",
-      "That’s why more companies are not only reevaluating their website’s design but also partnering with Devman, the web design agency that’s driven more than $2.4 billion in revenue for its clients. With over 50 web design awards under our belt, we're confident we can design a custom website that drives sales for your unique business.",
-    ],
-  },
-  {
-    name: "Game Development",
-    icon: "img/svg/star.svg",
-    img: "img/service/4.jpg",
-    description: [
-      "Devman is a leading web design agency with an award-winning design team that creates innovative, effective websites that capture your brand, improve your conversion rates, and maximize your revenue to help grow your business and achieve your goals.",
-      "In today’s digital world, your website is the first interaction consumers have with your business. That's why almost 95 percent of a user’s first impression relates to web design. It’s also why web design services can have an immense impact on your company’s bottom line.",
-      "That’s why more companies are not only reevaluating their website’s design but also partnering with Devman, the web design agency that’s driven more than $2.4 billion in revenue for its clients. With over 50 web design awards under our belt, we're confident we can design a custom website that drives sales for your unique business.",
-    ],
-  },
-];
 const Service = ({ services }) => {
   const [activeData, setActiveData] = useState({});
   const [open, setOpen] = useState(false);
@@ -66,7 +24,7 @@ const Service = ({ services }) => {
                     data-wow-duration="1s"
                     key={i}
                   >
-                    <div className="list_inner">
+                    {/* <div className="list_inner">
                       <h3 className="title">{service.name}</h3>
                       <p className="text">
                         {service.desc.substring(0, 138)}.
@@ -83,6 +41,16 @@ const Service = ({ services }) => {
                         src={service.image.url}
                         alt=""
                       />
+                    </div> */}
+                    <div className="service-card">
+                      <div className="service-card-img">
+                        <img src={service.image?.url} alt="" />
+                      </div>
+                      <div className="service-card-content">
+                        <h1 className="title">{service.name}</h1>
+                        <h6>{service.charge}</h6>
+                        <p className="desc">{service.desc}</p>
+                      </div>
                     </div>
                   </li>
                 ))}

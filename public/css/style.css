@@ -1319,12 +1319,14 @@ h6 {
   margin: 0px;
   list-style-type: none;
   position: relative;
-  float: left;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .devman_tm_portfolio ul li {
-  margin: 0px 0px 60px 0px;
-  width: 100%;
+  margin: 0px 30px 30px 0px;
+  width: 300px;
   float: left;
 }
 
@@ -1342,6 +1344,11 @@ h6 {
   overflow: hidden;
 }
 
+.project-card {
+  position: relative;
+}
+
+
 .devman_tm_portfolio ul li .background_image {
   position: absolute;
   top: 0px;
@@ -1353,7 +1360,6 @@ h6 {
   background-position: center;
   border-radius: 20px;
   transform: scale(1) translateZ(0);
-
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   -ms-transition: all 0.3s ease;
@@ -1361,18 +1367,17 @@ h6 {
   transition: all 0.3s ease;
 }
 
-.devman_tm_portfolio ul li .list_inner:hover .background_image {
+.project-card:hover .background_image {
   transform: scale(1.1) translateZ(0);
 }
 
 .devman_tm_portfolio ul li .content {
   width: 100%;
-  height: auto;
   clear: both;
   float: left;
   position: relative;
   z-index: 2;
-  padding: 150px 95px;
+  padding: 100px 20px;
 }
 
 .devman_tm_portfolio ul li .details {
@@ -1683,7 +1688,7 @@ h6 {
   overflow: hidden;
 }
 
-.skills-images{
+.skills-images {
   display: flex;
   flex-wrap: wrap;
   gap: 15px;
@@ -1691,18 +1696,19 @@ h6 {
   justify-content: center;
 }
 
-.skill-image{
+.skill-image {
   padding: 10px;
   border-radius: 10px;
   box-shadow: 0px 0px 10px #888888;
 }
 
-.skill-image img{
+.skill-image img {
   width: 100px;
   height: 100px;
   transition: all 0.3s ease-in-out;
 }
-.skill-image:hover img{
+
+.skill-image:hover img {
   scale: 1.15;
 }
 
@@ -1859,11 +1865,12 @@ h6 {
   overflow: hidden;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .devman_tm_service .service_list ul li {
   margin: 0px 0px 0px 0px;
-  width: 50%;
+  width: 80%;
   float: left;
 }
 
@@ -1919,13 +1926,51 @@ h6 {
 
 .devman_tm_service .service_list ul li .title {
   font-size: 36px;
-  color: #fff;
+  color: #000;
   margin-bottom: 30px;
 }
 
 .devman_tm_service .service_list ul li .text {
   color: #fff;
   line-height: 37px;
+}
+
+.service-card {
+  width: 100%;
+  clear: both;
+  float: left;
+  margin: 30px;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 20px;
+  gap: 20px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.service-card:hover {
+  scale: 1.05;
+  box-shadow: #54545f 0px 0px 20px;
+}
+
+.service-card-img {
+  width: 50%;
+  border-radius: 20px;
+}
+
+.service-card-img img {
+  border-radius: 20px;
+}
+
+.service-card-content {
+  width: 60%;
+  padding-right: 20px;
 }
 
 .devman_tm_modalbox {
@@ -1938,7 +1983,6 @@ h6 {
   background-color: rgba(0, 0, 0, 0.9);
   opacity: 0;
   visibility: hidden;
-
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   -ms-transition: all 0.3s ease;
@@ -4147,7 +4191,35 @@ h6 {
   }
 
   .devman_tm_service .service_list ul li {
+    width: 80%;
+    justify-content: center;
+    margin: 20px;
+  }
+
+  .service-card {
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: #54545f 0px 0px 20px;
+    gap: 0;
+    margin: 0;
+  }
+
+  .service-card:hover {
+    scale: 1;
+  }
+
+  .service-card-img {
     width: 100%;
+    border-radius: 20px;
+  }
+
+  .service-card-img img {
+    border-radius: 20px;
+  }
+
+  .service-card-content {
+    width: 100%;
+    padding: 20px;
   }
 
   .devman_tm_news ul {

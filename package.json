@@ -15,6 +15,7 @@
     "react-countup": "^6.3.0",
     "react-dom": "18.2.0",
     "react-visibility-sensor": "^5.1.1",
+    "react-youtube": "^10.1.0",
     "swiper": "^8.3.0",
     "wowjs": "^1.1.3"
   },

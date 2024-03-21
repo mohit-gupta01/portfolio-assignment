@@ -1,4 +1,6 @@
 import Popup from "./Popup";
+import YouTube from "react-youtube";
+
 const DetailsPopup = ({ open, close, data }) => {
   return (
     <Popup open={open} close={close}>
@@ -28,14 +30,6 @@ const DetailsPopup = ({ open, close, data }) => {
           </div>
           <div className="detailbox">
             <ul>
-              {(data?.githuburl) && <li>
-                <span className="first">Github</span>
-                <a href={data.githuburl}>{data.githuburl}</a>
-              </li>}
-              {(data?.liveurl) && <li>
-                <span className="first">Live Url</span>
-                <a href={data.liveurl}>{data.liveurl}</a>
-              </li>}
               <li>
                 <span className="first">Tech Stack</span>
                 <ul style={{ listStyle: "none" }}>
@@ -44,6 +38,14 @@ const DetailsPopup = ({ open, close, data }) => {
                   ))}
                 </ul>
               </li>
+              {(data?.githuburl) && <li>
+                <span className="first">Github</span>
+                <a href={data.githuburl}>{data.githuburl}</a>
+              </li>}
+              {(data?.liveurl) && <li>
+                <span className="first">Live Url</span>
+                <a href={data.liveurl}>{data.liveurl}</a>
+              </li>}
             </ul>
           </div>
         </div>
@@ -53,7 +55,7 @@ const DetailsPopup = ({ open, close, data }) => {
               <div className="list_inner">
                 <div className="my_image">
                   <img src="img/thumbs/4-2.jpg" alt="" />
-                  <div className="main" data-img-url="img/thumbs/4-2.jpg" style={{ backgroundImage: `url(${data?.image.url})` }}/>
+                  <div className="main" data-img-url="img/thumbs/4-2.jpg" style={{ backgroundImage: `url(${data?.image.url})` }} />
                 </div>
               </div>
             </li>
@@ -61,7 +63,7 @@ const DetailsPopup = ({ open, close, data }) => {
               <div className="list_inner">
                 <div className="my_image">
                   <img src="img/thumbs/4-2.jpg" alt="" />
-                  <div className="main" data-img-url="img/thumbs/4-2.jpg" style={{ backgroundImage: `url(${data?.image.url})` }}/>
+                  <div className="main" data-img-url="img/thumbs/4-2.jpg" style={{ backgroundImage: `url(${data?.image.url})` }} />
                 </div>
               </div>
             </li>
@@ -69,7 +71,7 @@ const DetailsPopup = ({ open, close, data }) => {
               <div className="list_inner">
                 <div className="my_image">
                   <img src="img/thumbs/4-2.jpg" alt="" />
-                  <div className="main" data-img-url="img/thumbs/4-2.jpg" style={{ backgroundImage: `url(${data?.image.url})` }}/>
+                  <div className="main" data-img-url="img/thumbs/4-2.jpg" style={{ backgroundImage: `url(${data?.image.url})` }} />
                 </div>
               </div>
             </li>
